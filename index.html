@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width" />
+    <title>MarBlue</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- JavaScript Bundle with Popper -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/cartas.css">
+    <link rel="icon" type="images/svg" href="img/logo1.svg">
+    <link rel="stylesheet" href="css/burbujas.css">
+    <!--icono de la pagina-->
+    <script defer src="js/index.js"></script>
+    <!--logo-->
+    <link rel="stylesheet" href="css/logo.css">
+</head>
+
+<body class="body">
+    <header class="header">
+        <nav class="nav">
+            <div class="menuL1" id="menuL1">
+                <div class="contenedor1 contenedor-enlaces-nav1">
+                    <div class="btn-LOGO1" id="btn-LOGO1">
+                        <a href="#"><img src="/img/logon.png" alt="" class="logo nav-link "></a>
+                    </div>
+                    <!--logo desplegable-->
+                    <div class="contenedor contenedor-botones-menu">
+                        <button id="btn-menu-barras" class="btn-menu-barras"><i class="fas fa-bars"></i></button>
+                        <button id="btn-menu-cerrar" class="btn-menu-cerrar"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="contenedorL contenedor-gridT">
+                        <div class="gridL1" id="gridL1">
+                            <div class="categorias categorias_ancho">
+                                <button class="btn-regresar">
+                                    <i class="fas fa-arrow-left"></i> Regresar</button>
+                                <h3 class="subtitulo">Categorias</h3>
+                                <a href="#" data-categoria="tipo-de-paginasweb">Tipo de paginas Web
+                                    <i class="fas fa-angle-right"></i></a>
+                                <a href="#" data-categoria="Web-corporativa">Web Corporativa
+                                    <i class="fas fa-angle-right"></i></a>
+                                <a href="#" data-categoria="gubernamentales">Gubernamentales
+                                    <i class="fas fa-angle-right"></i></a>
+                                <a href="#" data-categoria="educativas">Educativas
+                                    <i class="fas fa-angle-right"></i></a>
+                                <a href="#" data-categoria="redes-sociales">Redes sociales
+                                    <i class="fas fa-angle-right"></i></a>
+                                <a href="#" data-categoria="prensa">Prensa
+                                    <i class="fas fa-angle-right"></i></a>
+                                <a href="#" data-categoria="bancarios">Bancarios
+                                    <i class="fas fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--hasta aqui lo del logo-->
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="lista1 nav-menu">
+                <li class="nav-menu-item">
+                    <a class="nav-menu-link nav-link" href="/ini.php">Iniciar Sesión</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a class="nav-menu-link nav-link" href="/register.php">Registrarse</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a class="nav-menu-link nav-link" href="/servicios.html">Servicios</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a class="nav-menu-link nav-link" href="#"
+                        onclick="document.getElementById('id01').style.display='block'">Contacto</a>
+
+                    <div id="id01" class="modal">
+                        <div class="modal-content">
+                            <div class="container5">
+                                <span onclick="document.getElementById('id01').style.display='none'"
+                                    class="contacto">&times;</span>
+                                <p>Whatsapp <i class="fa-brands fa-whatsapp"></i> : +57 3185551914. </p>
+                                <p>Telefono <i class="fa-solid fa-phone"></i> : 3112727460.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="nav-menu-item">
+                    <a class="nav-menu-link nav-link nav-menu-link_active" href="#sobrenosotros">Sobre nosotros</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--parte de dany-->
+    <main>
+        <!--Slider-->
+        <div class="slide">
+            <div class="slide-inner">
+                <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden=""
+                    checked="checked">
+                <div class="slide-item">
+                    <img class="img" src="img/slider1.jpg">
+                </div>
+                <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
+                <div class="slide-item">
+                    <img class="img" src="/img/slider2.jpg">
+                </div>
+                <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
+                <div class="slide-item">
+                    <img class="img" src="/img/slider3.jpg">
+                </div>
+                <label for="slide-3" class="slide-control prev control-1">‹</label>
+                <label for="slide-2" class="slide-control next control-1">›</label>
+                <label for="slide-1" class="slide-control prev control-2">‹</label>
+                <label for="slide-3" class="slide-control next control-2">›</label>
+                <label for="slide-2" class="slide-control prev control-3">‹</label>
+                <label for="slide-1" class="slide-control next control-3">›</label>
+                <ol class="slide-indicador">
+                    <li>
+                        <label for="slide-1" class="slide-circulo">•</label>
+                    </li>
+                    <li>
+                        <label for="slide-2" class="slide-circulo">•</label>
+                    </li>
+                    <li>
+                        <label for="slide-3" class="slide-circulo">•</label>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="container_all" id="container__all">
+            <div class="cover">
+
+                <!--INICIO WAVE-->
+
+                <div class="bg_color"></div>
+                <div class="wave w1"></div>
+                <div class="wave w2"></div>
+
+                <!--FINAL WAVE-->
+
+                <div class="container__cover">
+                    <div class="container__info">                      
+                    </div>
+                </div>
+            </div>
+
+            <div class="burbujas">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+          
+            <section class="introducción" id="introducción">
+                <h1 class="title"> Controla tu negocio con un solo toque</h1>
+                <br>
+
+                <div class="container">
+
+                    <div class="card">
+                        <img src="img/img1.jpg">
+                     
+                        <h4>Sitio institucional</h4>
+                        <br>
+                        <p>Generalmente este tipo de sitio web describe las actividades y datos clave de una organización y suministra a los clientes o beneficiarios la información necesaria.</p>
+                        <a href="#">Leer más</a>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/img2.gif">
+                        
+                        <h4>Corporativos</h4>
+                        <br>
+                        <p>se utiliza para dar a conocer al público objetivo o clientes potenciales toda la información relacionada con una empresa.</p>
+                        <a href="#">Leer más</a>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/img3.gif">
+                        <h4>Tienda en línea</h4>
+                        <br>
+                        <p>Ten una tienda online atractiva y empieza a vender productos en línea hoy mismo.</p>
+                        <a href="#">Leer más</a>
+                    </div>
+
+                </div>
+        </div>
+
+         <!--Sobre nosotros - Nuestro equipo-->
+
+         <div class="container__about div__offset">
+            <div class="about">
+                <div class="text__about">
+                    <h1>El equipo creativo</h1>
+                    <p>Somos quienes te acompañaran a incursionar en este viaje de la globalizacion de la web.</p>
+                    <a href="#" class="btn__text-about btn__text">Saber Más</a>
+                </div>
+                
+                <div class="image__about">
+                    <div>
+                    <center><a>Danel Castro</a><img src="img/About/about-1.png" alt=""></div></center>
+                    <center><div><a>Charlín Cano</a><img src="img/About/about-2.png" alt=""></div></center>
+                    <center><div><a>Marjory Hernandez</a><img src="img/About/about-3.png" alt=""></div></center>
+                </div>
+            </div>
+            
+        </div>
+
+        <!--SERVICIOS-->
+
+        <div class="container__service container__card-primary div__offset">
+            <div class="service card__primary">
+                <div class="text__service text__card-primary">
+                    <p>QUE HACEMOS</p>
+                    <h1>Creamos paginas web segun tu necesidad</h1>
+                </div>
+
+                <div class="container__card-service container__box-cardPrimary">
+                    <div class="card__service box__card-primary">
+                        <img src="img/Services/file.png" alt="">
+                        <h2>Control empresarial completo</h2>
+                        <p>Usuario empresarial.</p>
+                        <a href="/register.php">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="card__service box__card-primary">
+                        <img src="img/Services/ventas.png" alt="">
+                        <h2>Control de tus ventas</h2>
+                        <p>Tendras la visualizacion y rastreo de compras en tiempo real. </p>
+                        <a href="/register.php">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="card__service box__card-primary">
+                        <img src="img/Services/usuarios.png" alt="">
+                        <h2>Miles de usuarios al día</h2>
+                        <p>Te aseguramos que tu pagina web sera apta para manejar miles de usuarios a la vez.</p>
+                        <a href="/register.php">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="card__service box__card-primary">
+                        <img src="img/Services/presupeusto.png" alt="">
+                        <h2>Presupuestos</h2>
+                        <p>Te creamos un programa segun tu presupuesto.</p>
+                        <a href="/register.php">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="card__service box__card-primary">
+                        <img src="img/Services/papeleo.png" alt="">
+                        <h2>Sin papeleos</h2>
+                        <p>No necesitas tanto papeleo para tus proyectos.</p>
+                        <a href="/register.php">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="card__service box__card-primary">
+                        <img src="img/Services/cart.png" alt="">
+                        <h2>Compra lo que necesitas</h2>
+                        <p>Adquiere solo lo necesario.</p>
+                        <a href="/register.php">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </main>
+    <!--hasta aqui-->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img class="logo1" src="/img/logo1.svg" alt="logo1">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2 class="h2" id="sobrenosotros">SOBRE NOSOTROS</h2>
+                <p class="p1">Charlín Tatiana Cano Tabares</p>
+                <p class="p2">Majory Milagros Hernandez Garcia</p>
+                <p class="p3">Daniel Stiven Castro Sisa</p>
+            </div>
+            <div class="box">
+                <h2 class="h2">SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2022 <b>Nuestra Hermosa Pagina Web</b> - Todos los Derechos Reservados</small>
+        </div>
+    </footer>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+
+
+        <!-- JavaScript Bundle with Popper -->
+
+        <script src="js/imagenes.js"></script>
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+        <script src="https://kit.fontawesome.com/66c4e5c81a.js" crossorigin="anonymous"></script>
+        <script src="js/animaciones.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/LOGO.js"></script>
+
+
+
+
+</body>
+
+</html>
