@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap%27');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+}
+.header{
+    width:  100%;
+    max-width: 800px;
+    padding: 40px;
+    margin: auto;
+    margin-top: 100px;
+    background: rgb(4, 18, 82, 0.8);
+    border-radius: 20px;
+
+}
+h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.logo-welcome {
+    width: 100px;
+    margin: 1%;
+    margin-top: 1%;
+   /* background-color: rgb(255, 255, 255);*/
+}
+
+.title-welcome {
+    /* font-weight: 400;
+    font-size: 40px; */
+    /*margin-top: 20px;*/
+    color: rgb(100, 141, 203);
+    background-color: rgb(252, 252, 252);
+    text-align: center;
+}
+
+ body {
+    font-family: 'Poppins';
+    background-color: rgba(100, 169, 252, 0.671);
+    background-image:url(/img/fondo.jpg);
+    background-size: cover;
+
+}
+.contenedor{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.formulario{
+    text-align: center;
+    grid-area: header; 
+}
+/* .inputsdetabla{
+    text-align: left;
+    width: 10px;
+} */
+
+table{
+    background-color: rgb(172, 190, 249);
+    text-align: left;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 13px;
+}
+
+th, td{
+    padding: 15px;
+}
+
+thead{
+    background-color: #577fb3;
+    border-bottom: solid 5px #0F362D;
+    color: rgb(255, 255, 255);
+}
+
+tr:nth-child(even){
+
+    background-color: rgb(126, 165, 218);
+}
+
+tr:hover td{
+    background-color: #03012b;
+    color: rgb(255, 255, 255);
+}
+.welcome{
+    display: flex;
+    background-color: #000000;
+    align-items: center;
+    padding-left: 110px;
+}
+
+#form_nombre, #form_fechacrea, #form_fechaentrega, #form_presupuesto{
+    width: 80%;
+    height: 25px;
+    border-radius: 5px;
+}
+
+#form_tipop{
+    width: 80%;
+    height: 25px;
+    border-radius: 5px;
+}
+
+#mancadeshit{
+    width: 80%;
+    height: 25px;
+    border-radius: 5px; 
+    
+}
+#form_extras{
+    
+    width: 80%;
+    height: 25px;
+    border-radius: 5px; 
+}
+.botoncito{
+    width: 80%;
+    height: 35px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.close-sesion{
+color: rgb(255, 255, 255);
+width: 100px;
+height: 40px;
+font-size: 13px;
+padding-top: 15px;
+align-items: center;
+text-align: center;
+border-radius: 55px;
+background-color: rgb(180, 67, 255);
+float: right;
+text-decoration: none;
+}
+
